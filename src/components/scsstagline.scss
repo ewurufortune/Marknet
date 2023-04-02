@@ -1,41 +1,41 @@
-:root {
+.tagline {
     --color-primary: hsl(310, 100%, 65%);
     --color-secondary: hsl(160, 100%, 65%);
     --background: hsl(230, 30%, 15%);
     --text: hsl(310, 100%, 95%);
   }
   
-  ::selection {
+  .tagline ::selection {
     background-color: var(--color-primary);
     color: var(--background);
     -webkit-text-fill-color: var(--background);
   }
   
-  * {
+  .tagline {
     box-sizing: border-box;
   }
   
   body {
-    display: grid;
+    display: inline-block;
     place-content: center;
     gap: 4vh;
     min-height: 100vh;
-    width: min(60ch, 100vw - 2rem);
-    margin-right: auto;
-    margin-left: auto;
+    width: min(60ch, 105vw - 2rem);
+    margin-right: 200px;
+    margin-left: 0px;
     font-size: 1.5rem;
     line-height: 1.5;
     background-color: var(--background);
     color: var(--text);
   }
   
-  h1 {
+  .tagline h1 {
     color: var(--color-primary);
   }
   
-  blockquote {
+  .tagline blockquote {
     border-left: 5px solid;
-    margin-left: 0;
+    margin-left: -10px;
     padding: 1rem 0 1rem 2rem;
     font-size: 2rem;
     -webkit-background-clip: text;
@@ -46,7 +46,7 @@
       var(--color-secondary)
     );
   
-    p {
+    .tagline p {
       margin: 0;
     }
   }

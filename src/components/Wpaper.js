@@ -1,3 +1,6 @@
+
+
+
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -16,11 +19,13 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import './minidrawersass.scss'
-import Tagline from './Tagline';
+// import './minidrawersass.scss'
+import './whitepapercss/wpaperminidrawerscss.scss'
+import './whitepapercss/headerwhitepaper.scss';
+import ParagraphOne from './ParagraphOne';
 const drawerWidth = 240;
 
-function MiniDrawer(props) {
+function Wpaper(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -29,8 +34,9 @@ function MiniDrawer(props) {
   };
 
   const drawer = (
-    <div   style={{backgroundImage: 'linear-gradient(142deg, rgba(63, 161, 251, 1) 0%, rgba(252, 70, 168, 1) 100%)'}}>
+    <div  style={{backgroundImage: 'linear-gradient(142deg, rgba(63, 161, 251, 1) 0%, rgba(252, 70, 168, 1) 100%)'}}>
       <Toolbar />
+      
       <Divider />
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
@@ -45,7 +51,8 @@ function MiniDrawer(props) {
         ))}
       </List>
       <Divider />
-      <List>
+    
+      <List sx={{marginBottom: '190px'}}>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -56,6 +63,7 @@ function MiniDrawer(props) {
             </ListItemButton>
           </ListItem>
         ))}
+        
       </List>
     </div>
   );
@@ -81,12 +89,15 @@ function MiniDrawer(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
+           
           </IconButton>
           <h1 className="sweet-title2">
       <span data-text="MCN">MCN</span>
       <span data-text="WEB3">WEB3</span>
     </h1>
+   
         </Toolbar>
+       
       </AppBar>
       <Box
         component="nav"
@@ -123,47 +134,23 @@ function MiniDrawer(props) {
         >
           {drawer}
         </Drawer>
+       
+
       </Box>
+  
       <Box
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <div className='home'>
-        <section className="header">
-  <div className="title-wrapper">
-    <h1 className="sweet-title">
-      <span data-text="MCN">MCN</span>
-      <span data-text="WEB3">WEB3</span>
-    </h1>
-    <span className="top-title">Coming Soon...</span>
-    <span className="bottom-title">You can find</span>
-    </div>
-</section>
-
-
-
-<div className='tagline'>
-<Tagline />
-</div>
-<div className='bottom'>
-<section className="disclaimer">
-  <span>Inspired by <a href="https://www.makesweetbeats.com/">makesweetbeats</a></span>
-</section>
-        <p className='paragraph'>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. P
-        </p>
-        <br/>
-        </div>
-        
-</div>
+       
       </Box>
+      <ParagraphOne />  
     </Box>
   );
 }
 
-MiniDrawer.propTypes = {
+Wpaper.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -171,4 +158,4 @@ MiniDrawer.propTypes = {
   window: PropTypes.func,
 };
 
-export default MiniDrawer;
+export default Wpaper;

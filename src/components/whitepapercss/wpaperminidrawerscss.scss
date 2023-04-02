@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
 
-.home {
+body {
   font-family: "Exo 2", sans-serif;
   background: rgb(63, 161, 251);
-
   background: linear-gradient(
     142deg,
     rgba(63, 161, 251, 1) 0%,
@@ -12,94 +11,82 @@
 }
 
 @media (max-width: 1000px) {
-  .home{
+  body{
     overflow-x: hidden;
   }
 }
 
-.home .header {
-  width: 100vw;
+.header {
   max-width: 1200px;
- margin-top: 400px;
- margin-left: 900px;
-  // padding: 1rem;
+ margin-top: -120px;
+ margin-left: 700px;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: calc(100vh - 4rem);
 }
 
-.home .tagline{
-  
-  margin-left: 450px;
-  padding-left: 180px;
-  padding-right: 180px;
+.tagline{
+  margin-left: 400px;
 }
-.home .bottom{
+.bottom{
   margin-left: 700px;
 }
 
 @media (max-width: 1000px) {
-  .home .header {
-    width: 100vw;
+  .header {
     max-width: 1200px;
-   margin-top: 900px;
-   margin-left: 920px;
-    // padding: 1rem;
+   margin-top: -120px;
+   margin-left: 0px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 4rem);
   }
 
-  .home .tagline{
-  
-    margin-left: 250px;
-    padding-left: 280px;
-    padding-right: 500px;
+  .tagline{
+    padding-left: 150px;
+    padding-right: 300px;
+    margin-left: 100px;
   }
 
-  .home .bottom{
-    padding-left: 100px;
-    padding-right: 700px;
-    margin-left: 500px;
+  .bottom{
+    padding-left: 1400px;
+    padding-right: 100px;
+    margin-left: 0px;
   }
   
 }
-.home .title-wrapper {
+.title-wrapper {
   display: grid;
   align-items: center;
   justify-content: center;
   transform: skew(0, -10deg);
 }
 
-.home .top-title {
+.top-title {
   order: 1;
   text-align: center;
   display: block;
   color: #fff;
   font-size: clamp(1rem, 4vw, 1.5rem);
-  margin-top: 5rem;
   margin-bottom: 1rem;
   padding-right: 2rem;
 }
 
-.home .bottom-title {
+.bottom-title {
   order: 3;
   text-align: center;
   display: block;
   color: #fff;
   font-size: clamp(1rem, 4vw, 1.5rem);
   margin-top: 2rem;
-  margin-left: 30px;
   padding-left: 2rem;
 }
-.home .paragraph{
-  margin-left: 400px;
-  padding-right: 200px;
-}
 
-.home .sweet-title {
+.sweet-title {
   order: 2;
   color: #fde9ff;
   font-weight: 900;
@@ -113,7 +100,7 @@
     6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
     9px 7px 1px #4af7ff;
 
-  .home span {
+  span {
     display: block;
     position: relative;
 
@@ -135,7 +122,7 @@
   }
 }
 
-.home .sweet-title2 {
+.sweet-title2 {
   order: 2;
   color: #fde9ff;
   font-weight: 900;
@@ -172,7 +159,7 @@
 }
 
 @media (min-width: 1000px) {
-  .home .sweet-title2 {
+  .sweet-title2 {
     order: 2;
     color: #fde9ff;
     font-weight: 900;
@@ -186,7 +173,7 @@
       6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
       9px 7px 1px #4af7ff;
   
-    .home span {
+    span {
       display: block;
       position: relative;
   
@@ -209,14 +196,13 @@
   }
   
 }
-.home .disclaimer {
-  margin-left: 50px;
+.disclaimer {
   width: 100%;
   height: 2rem;
   text-align: center;
   color: #fff;
 
-  .home a {
+  a {
     color: #fff;
   }
 }
