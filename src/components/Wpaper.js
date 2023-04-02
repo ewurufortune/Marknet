@@ -23,6 +23,7 @@ import Typography from '@mui/material/Typography';
 import './whitepapercss/wpaperminidrawerscss.scss'
 import './whitepapercss/headerwhitepaper.scss';
 import ParagraphOne from './ParagraphOne';
+import { Outlet, Link } from "react-router-dom";
 const drawerWidth = 240;
 
 function Wpaper(props) {
@@ -39,32 +40,40 @@ function Wpaper(props) {
       
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-    
-      <List sx={{marginBottom: '190px'}}>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        
-      </List>
+  {[
+    {text: 'Home', link: '/home'},
+    {text: 'Whitepaper', link: '/whitepaper'},
+    {text: 'Waitlist', link: '/waitlist'},
+    {text: 'Drafts', link: '/drafts'}
+  ].map((item, index) => (
+    <ListItem key={item.text} disablePadding>
+      <ListItemButton component="a" href={item.link}>
+        <ListItemIcon>
+          {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+        </ListItemIcon>
+        <ListItemText primary={item.text} />
+      </ListItemButton>
+    </ListItem>
+  ))}
+</List>
+<Divider />
+<List sx={{marginBottom: '195px'}}>
+  {[
+    {text: 'Notifications', link: '/notifications'},
+    {text: 'MCNWallet', link: '/mcn-wallet'},
+    {text: 'Settings', link: '/settings'}
+  ].map((item, index) => (
+    <ListItem key={item.text} disablePadding>
+      <ListItemButton component="a" href={item.link}>
+        <ListItemIcon>
+          {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+        </ListItemIcon>
+        <ListItemText primary={item.text} />
+      </ListItemButton>
+    </ListItem>
+  ))}
+</List>
+
     </div>
   );
 

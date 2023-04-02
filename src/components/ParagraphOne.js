@@ -16,7 +16,7 @@ export default function ParagraphOne(){
 </ul>
 
 
-<section className='section' >
+<section className='section at1' >
 <h2>Attempt 1 - only use 1 element</h2>
 <ul>
   <li>🤷‍♀️ Text will be skewed the same as the background. Don't know how to straighten the text, if straight text is desired.</li>
@@ -41,36 +41,55 @@ export default function ParagraphOne(){
 <section className='section' >
 <Wrapper />
 <h1 className='glow'>Whitepaper</h1>
-<h2>Attempt 3 - 1 element, box-decoration-break: clone</h2>
-<ul>
-  <li>🛑 No skew - seems to be ignored on inline elements (in Webkit at least).</li>
-  <li>✅ Multi line consistency</li>
-  <li>✅ No multiline following text eject to next line.</li>
-  <li>⚠️ If multiline, following lines can cover the decenders of previous line's characters.</li>
-  <li>⚠️ Poor multiline left-to-right gradient background color; visible lines in most cases.</li>
-</ul>
-<p class="attempt-3">Some text with some <em>skewed words</em> in the middle.</p>
-<p class="attempt-3">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p></section>
+
+      <h1>🌐 Introduction</h1>
+      <p>
+        The world is rapidly evolving and so is technology. The rise of Web3.0
+        has the potential to revolutionize the way we interact with the internet.
+        Web3.0 aims to create a decentralized web where users have complete
+        control over their data and interactions. At the heart of Web3.0 lies
+        blockchain technology, which enables trustless interactions and allows
+        users to participate in decentralized networks without intermediaries.
+      </p>
+      <p className='attempt-3'>
+        Our project, <em><span>MCN WEB3</span></em>, aims to leverage Web3.0 and blockchain
+        technology to create a new way for individuals and businesses to connect
+        and transact. By building a decentralized platform that facilitates
+        peer-to-peer transactions and exchanges, we aim to remove the need for
+        traditional intermediaries such as banks, payment processors, and marketplaces.
+      </p>
+      <ul>
+        <li>🚀 Faster, cheaper, and more secure transactions</li>
+        <li>🔒 Complete control over your data and interactions</li>
+        <li>🌎 Global access without restrictions or limitations</li>
+        <li>💰 Lower fees and more efficient processes</li>
+      </ul>
+      <p className='attempt-4'>
+        We believe that Web3 Idea has the potential to disrupt the current
+        centralized models of commerce and <em><span>create a more inclusive, equitable,
+        and accessible economy.</span></em> In this white paper, we will outline our vision
+        for Web3 Idea, its key features, and the roadmap for its development and
+        implementation.
+      </p>
+    </section>
   
 <section className='section' >
-<h2>Attempt 4 - double wrapping elements</h2>
-<ul>
-  <li>✅ Avoids pseudo element z-index issues.</li>
-  <li>🤷‍♂️ Don't know if double skewing elements causes subtle text rendering changes</li>
-  <li>⚠️ If multiline, preceding and following text is ejected to the next line.</li>
-</ul>
-<p class="attempt-4">Some text with some <em><span>skewed words</span></em> in the middle.</p>
-<p class="attempt-4">Lorem ipsum dolor sit amet, consectetur <em><span>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</span></em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p>
+
+  <h2>Our Solution: The Decentralized Marketplace</h2>
+  <p className='attempt-4'><em><span>🛍️ Say goodbye to centralized marketplaces and hello to a new decentralized era.</span></em></p>
+  <p>Our web3 platform offers a decentralized marketplace where buyers and sellers can transact directly with each other without the need for intermediaries or middlemen. By leveraging blockchain technology, we can ensure secure and transparent transactions, as well as lower transaction fees.</p>
+  <p>Our decentralized marketplace will enable sellers to reach a larger audience and buyers to have access to a wider range of products and services. Additionally, buyers and sellers can establish their reputation on the platform through a transparent and trustless rating system. With our platform, buyers can have confidence that they are buying from reputable sellers, while sellers can have confidence that they will receive payment for their products or services.</p>
+  <p><em>🌍 Our decentralized marketplace will provide economic opportunities for people around the world.</em></p>
 </section>
-  
-<section className='section' >
-<h2>Attempt 5 - double pseudo elements at ends</h2>
-<ul>
-  <li>⚠️ Poor multiline rendering. Pseudo elements don't always line up nicely. Can cause sharp corners or gaps.</li>
-  <li>⚠️ If multiline, preceding and following text is ejected to the next line.</li>
-</ul>
-<p class="attempt-5">Some text with some <em>skewed words</em> in the middle.</p>
-<p class="attempt-5">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p>
+
+
+<section className='section'>
+<h2>Tokenomics and Distribution</h2>
+<p className='attempt-4'>The token for our platform will be called <em><span>MCNCoin</span></em> (W3C). It will be an ERC-20 token built on the Ethereum blockchain, ensuring its compatibility with a wide range of wallets, exchanges, and other services.</p>
+<p>The initial supply of W3C will be 1 billion tokens. Of these, 30% will be reserved for the team, advisors, and early investors, with a four-year vesting period to ensure long-term alignment with the project's goals. Another 20% will be allocated to a reserve fund, which will be used to support future development and ecosystem growth. The remaining 50% will be available for public sale through a series of pre-sales, private sales, and a public sale.</p>
+<p className='attempt-4'>We believe that a fair and transparent distribution model is critical for building a strong and engaged community.<em><span>As such, we will conduct a rigorous KYC/AML process for all participants in our token  sales, and we will cap the maximum individual contribution to ensure broad  participation.</span></em>  In addition, we will reserve a portion of the token allocation for community building initiatives such as bounties, airdrops, and liquidity provision incentives.</p>
+<p>Our goal is to create a sustainable and thriving ecosystem that benefits all stakeholders. By carefully balancing token allocation and distribution, we aim to create a community that is aligned around our mission of empowering users and unlocking the full potential of the decentralized web.</p>
+🚀🌕🤝💰👨‍💻
 </section>
 
         </div>

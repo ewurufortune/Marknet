@@ -18,6 +18,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import './minidrawersass.scss'
 import Tagline from './Tagline';
+import { Outlet, Link } from "react-router-dom";
 const drawerWidth = 240;
 
 function MiniDrawer(props) {
@@ -33,30 +34,40 @@ function MiniDrawer(props) {
       <Toolbar />
       <Divider />
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+  {[
+    {text: 'Home', link: '/home'},
+    {text: 'Whitepaper', link: '/whitepaper'},
+    {text: 'Waitlist', link: '/waitlist'},
+    {text: 'Drafts', link: '/drafts'}
+  ].map((item, index) => (
+    <ListItem key={item.text} disablePadding>
+      <ListItemButton component="a" href={item.link}>
+        <ListItemIcon>
+          {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+        </ListItemIcon>
+        <ListItemText primary={item.text} />
+      </ListItemButton>
+    </ListItem>
+  ))}
+</List>
+<Divider />
+<List sx={{marginBottom: '195px'}}>
+  {[
+    {text: 'Notifications', link: '/notifications'},
+    {text: 'MCNWallet', link: '/mcn-wallet'},
+    {text: 'Settings', link: '/settings'}
+  ].map((item, index) => (
+    <ListItem key={item.text} disablePadding>
+      <ListItemButton component="a" href={item.link}>
+        <ListItemIcon>
+          {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+        </ListItemIcon>
+        <ListItemText primary={item.text} />
+      </ListItemButton>
+    </ListItem>
+  ))}
+</List>
+
     </div>
   );
 
@@ -137,7 +148,7 @@ function MiniDrawer(props) {
       <span data-text="WEB3">WEB3</span>
     </h1>
     <span className="top-title">Coming Soon...</span>
-    <span className="bottom-title">You can find</span>
+    <span className="bottom-title">By MarkPrince</span>
     </div>
 </section>
 
@@ -148,11 +159,10 @@ function MiniDrawer(props) {
 </div>
 <div className='bottom'>
 <section className="disclaimer">
-  <span>Inspired by <a href="https://www.makesweetbeats.com/">makesweetbeats</a></span>
+  <span>Inspired by <a href="https://twitter.com/ewurufortune"><u>Fortune Ewuru </u>🐺</a></span>
 </section>
         <p className='paragraph'>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
-          eget nulla facilisi etiam dignissim diam. P
+        Experience faster, cheaper, and more secure transactions while enjoying complete control over your data.🚀🔒
         </p>
         <br/>
         </div>

@@ -15,6 +15,7 @@ export default function App() {
           {/* 👇️ handle dynamic path */}
           <Route path="/users/:userId" element={<Users />} />
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
           {/* 👇️ only match this when no other routes match */}
           <Route
