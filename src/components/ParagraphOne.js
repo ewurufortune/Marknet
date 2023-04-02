@@ -7,10 +7,10 @@ export default function ParagraphOne(){
         <div className='whitepaper'>
         
             <h1>CSS attempts at text with inline skewed background</h1>
-<p class="gray">Update: Some corrections and elaborations on 18/02/2019.</p>
+<p className="gray">Update: Some corrections and elaborations on 18/02/2019.</p>
 
 <h2>Notes:</h2>
-<ul class="gray">
+<ul className="gray">
     <li>Using skew is only rendered if the item is display block or inline-block.</li>
     <li>Some of these look the same on a wide viewport but fail differently as the viewport width is decreased.</li>
 </ul>
@@ -23,8 +23,8 @@ export default function ParagraphOne(){
   <li>⚠️ If multiline, preceding and following text is ejected to the next line even if there is space for it inline.</li>
   <li>✅ Text always stays within background.</li>
 </ul>
-<p class="attempt-1">Some text with some <em>skewed words</em> in the middle.</p>
-<p class="attempt-1">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p>
+<p className="attempt-1">Some text with some <em>skewed words</em> in the middle.</p>
+<p className="attempt-1">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p>
 </section>
   
 <section className='section' >
@@ -34,8 +34,8 @@ export default function ParagraphOne(){
   <li>⚠️ Multi line text like this won't always sit on the background properly or will escape outside the background.</li>
   <li>⚠️ Some weird z-index to get the background behind the text.</li>
 </ul>
-<p class="attempt-2">Some text with some <em>skewed words</em> in the middle.</p>
-<p class="attempt-2">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p></section>
+<p className="attempt-2">Some text with some <em>skewed words</em> in the middle.</p>
+<p className="attempt-2">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p></section>
 
 <br />
 <section className='section' >
@@ -83,7 +83,7 @@ export default function ParagraphOne(){
 </section>
 
 
-<section className='section'>
+<section className='section end'>
 <h2>Tokenomics and Distribution</h2>
 <p className='attempt-4'>The token for our platform will be called <em><span>MCNCoin</span></em> (W3C). It will be an ERC-20 token built on the Ethereum blockchain, ensuring its compatibility with a wide range of wallets, exchanges, and other services.</p>
 <p>The initial supply of W3C will be 1 billion tokens. Of these, 30% will be reserved for the team, advisors, and early investors, with a four-year vesting period to ensure long-term alignment with the project's goals. Another 20% will be allocated to a reserve fund, which will be used to support future development and ecosystem growth. The remaining 50% will be available for public sale through a series of pre-sales, private sales, and a public sale.</p>
