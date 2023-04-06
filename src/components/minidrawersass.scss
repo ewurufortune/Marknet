@@ -20,7 +20,7 @@
 .home .header {
   width: 100vw;
   max-width: 1200px;
- margin-top: 800px;
+ margin-top: 880px;
  margin-left: 900px;
  margin-bottom: 5%;
   // padding: 1rem;
@@ -73,8 +73,9 @@
   }
   
   .home .paragraph{
+    font-size: 1rem;
     margin-left: 400px;
-    padding-right: 250px;
+    padding-right: 350px;
     margin-bottom: 15rem;
   }
   
@@ -256,15 +257,19 @@
   
 }
 .home .disclaimer {
-  margin-left: 50px;
-  padding-right: 40%;
-  width: 100%;
+
+  margin-left: 10%;
+  font-size: 1rem;
+  width: 50%;
   height: 2rem;
   text-align: center;
   color: #fff;
 
   .home a {
     color: #fff;
+  }
+   .twitter{
+margin-left: 55%;
   }
 
 }

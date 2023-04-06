@@ -159,7 +159,7 @@ function MiniDrawer(props) {
 </div>
 <div className='bottom'>
 <section className="disclaimer">
-  <span>Inspired by <a href="https://twitter.com/ewurufortune"><u>Fortune Ewuru </u>🐺</a></span>
+  <span className='twitter'> Inspired by <a href="https://twitter.com/ewurufortune"><u>Fortune Ewuru </u>🐺</a></span>
 </section>
         <p className='paragraph'>
         Experience faster, cheaper, and more secure transactions while enjoying complete control over your data.🚀🔒
