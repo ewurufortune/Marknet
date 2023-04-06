@@ -44,5 +44,9 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.10.0"
-  }
+  },
+  "description": "This project was made by Fortune Ewuru and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "Fortune Ewuru",
+  "license": "ISC"
 }
