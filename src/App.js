@@ -21,8 +21,11 @@ export default function App() {
           <Route
             path="*"
             element={
-              <div>
-                <h2>404 Page not found etc</h2>
+              <div className="underDev">
+                <h1 class="metal">
+    UNDER DEVELOPMENT
+    <span class="texture"></span>   
+  </h1>
               </div>
             }
           />

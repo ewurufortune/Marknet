@@ -44,3 +44,46 @@
         }
       }
   }
+
+  /* underconstruction */
+
+  .underDev h1 {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #2c4bff; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    animation: gradient 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      --_p: 0%;
+    }
+    50% {
+      --_p: 100%;
+    }
+    100% {
+      --_p: 0%;
+    }
+  }
+  
+  .underDev {
+    width: 100vw;
+    margin: 0;
+    margin-left: 30%;
+    display: grid;
+    place-content: center;
+  }
+  .underDev h1 {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  
