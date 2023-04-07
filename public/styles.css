@@ -80,10 +80,27 @@
     display: grid;
     place-content: center;
   }
+
   .underDev h1 {
     font-family: system-ui, sans-serif;
     font-size: 3rem;
     cursor: pointer;
   }
+  @media (max:1000px) {
+    .underDev {
+      width: 100vw;
+      margin: 0;
+      margin-left: 5%;
+      display: grid;
+      place-content: center;
+    }
+
+    .underDev h1 {
+      font-family: system-ui, sans-serif;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
   
   
