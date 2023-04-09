@@ -1,0 +1,33 @@
+<div className='delete'>
+        <h1>CSS attempts at text with inline skewed background</h1>
+<p className="gray">Update: Some corrections and elaborations on 18/02/2019.</p>
+
+<h2>Notes:</h2>
+<ul className="gray">
+    <li>Using skew is only rendered if the item is display block or inline-block.</li>
+    <li>Some of these look the same on a wide viewport but fail differently as the viewport width is decreased.</li>
+</ul>
+
+
+<section className='section at1' >
+<h2>Attempt 1 - only use 1 element</h2>
+<ul>
+  <li>🤷‍♀️ Text will be skewed the same as the background. Don't know how to straighten the text, if straight text is desired.</li>
+  <li>⚠️ If multiline, preceding and following text is ejected to the next line even if there is space for it inline.</li>
+  <li>✅ Text always stays within background.</li>
+</ul>
+<p className="attempt-1">Some text with some <em>skewed words</em> in the middle.</p>
+<p className="attempt-1">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p>
+</section>
+  
+<section className='section' >
+<h2>Attempt 2 - 1 element and a pseudo element</h2>
+<ul>
+  <li>⚠️ If multiline, preceding and following text is ejected to the next line.</li>
+  <li>⚠️ Multi line text like this won't always sit on the background properly or will escape outside the background.</li>
+  <li>⚠️ Some weird z-index to get the background behind the text.</li>
+</ul>
+<p className="attempt-2">Some text with some <em>skewed words</em> in the middle.</p>
+<p className="attempt-2">Lorem ipsum dolor sit amet, consectetur <em>adipisicing elit. Assumenda, eius consequuntur. Culpa possimus rem quibusdam odit facilis dolorum mollitia, voluptates</em> sapiente dolor doloribus quos nam quasi, repellendus blanditiis saepe fuga.</p></section>
+
+        </div>
