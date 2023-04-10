@@ -159,8 +159,17 @@ li {
     width: min(90vw, 1200px);
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1202rem;
+    margin-top: -2202rem;
     margin-bottom: 15rem;
+  }
+  .section {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 5rem;
+    margin: 2rem auto;
+    margin-left: -80px;
+    border-radius: 0.3rem;
+    margin-top: -800rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -177,7 +186,7 @@ li {
 }
 
 .whitepaper {
-  margin-top: 386rem;
+  // margin-top: 386rem;
   background: #ccc;
   background: linear-gradient(to right, #abd, #bce);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
